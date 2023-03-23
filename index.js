@@ -23,17 +23,15 @@ const loadFile = async () => {
     });
   }
   setBannerImage();
-
+//banner-text의 텍스트 변환
   function setBannerText() {
     const bannertexts = document.querySelectorAll(".banner-text");
     bannertexts.forEach((bannertext, i) => {
-      const bannertextKo = data[i].text_ko;
-      const value = eval(bannertextKo);
-      bannertext.innerHTML = value;
+      const Texts = data[i].text_ko;
+      bannertext.innerHTML=Texts;
       console.log(bannertext);
     });
   }
-
   setBannerText();
 };
 
@@ -56,3 +54,5 @@ window.addEventListener("load", function () {
     }
   });
 });
+
+

@@ -65,10 +65,48 @@
       "text_en": "FRITZ HANSEN</br>x Artist limited edition",
       "text_ko": "감도 높은 삶을 위해,</br>프리츠한센 X 아티스트 리미티드 에디션"
   },
+ 
   {
-      "image": "https://printbakery.s3.ap-northeast-2.amazonaws.com/web/2022/11/Thum_12-8.jpg",
-      "link": "",
-      "text_en": "",
-      "text_ko": ""
-  }
+    "image": "https://printbakery.com/web/product/medium/202303/98b382e91e4b290184126f916ac5af7b.jpg",
+    "link": "",
+    "text_en": "",
+    "text_ko": ""
+},
+{
+    "image": "https://printbakery.com/web/product/medium/202303/d4554110fef2c8eb41017531dc65f865.jpg",
+    "link": "",
+    "text_en": "",
+    "text_ko": ""
+},
+{
+    "image": "https://printbakery.com/web/product/medium/202303/71c6399e0ae33898c33325556d356d19.jpg",
+    "link": "",
+    "text_en": "",
+    "text_ko": ""
+},{
+    "image": "https://printbakery.com/web/product/medium/202303/267492bc46eb76d22f10d780c106a67a.jpg",
+    "link": "",
+    "text_en": "",
+    "text_ko": ""
+},{
+    "image": "https://www.printbakery.com/web/product/medium/202303/51ce5d41213736397ae428eebe83f158.jpg",
+    "link": "",
+    "text_en": "",
+    "text_ko": ""
+},{
+    "image": "https://www.printbakery.com/web/product/medium/202303/c3db3e2c1086da0cabda5b0dd70131da.jpg",
+    "link": "",
+    "text_en": "",
+    "text_ko": ""
+},{
+    "image": "https://www.printbakery.com/web/product/medium/202303/144182ae6792255da8a49f2093eb09eb.jpg",
+    "link": "",
+    "text_en": "",
+    "text_ko": ""
+},{
+    "image": "https://www.printbakery.com/web/product/medium/202302/11c63c6cecceabfd933ea31a2b153b74.jpg",
+    "link": "",
+    "text_en": "",
+    "text_ko": ""
+}
 ]

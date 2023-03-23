@@ -22,7 +22,7 @@ header {
   height: 100px;
   border-top: 1px solid gainsboro;
   padding-top: 20px;
-  border-bottom: 1px solid #f8f8f8;
+  border-bottom: 1px solid #e7e7e7;
   
 }
 footer{
@@ -64,8 +64,20 @@ footer{
     border-right: 1px solid gainsboro;
 }
 .bottom_menu{
+    font-weight: 700;
 padding-top: 20px;
 box-sizing: border-box;
+}
+.bottom_menu a{
+    border: 1px solid black;
+    color: #fff;
+   font-weight: 200;
+    background-color: #000;
+    border-radius: 40%;
+}
+#primeum{
+    padding-right: 20px;
+    border-right: 1px solid rgb(216, 216, 218);
 }
 a {
   color: inherit;
@@ -107,25 +119,42 @@ input{
     outline: none;
 }
 .search{
+    position: relative;
     background-color: rgb(238, 238, 243);
-    height: 25px;
+    height: 30px;
     width: 280px;
     text-align: center;
     align-items: center;
+    border-radius: 5px;
     
+}
+.search input{
+   position: absolute;
+   top: 7px;
+   right: 20px;
+}
+#search-icon-img{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+   
 }
 .mainpage{
+    width: 100%;
+    display: block;
     padding-top: 160px;
+    box-sizing: border-box;
 }
-.mainpage p{
-    
+
+.top_babber_wrap{
+    width: 100%;
 }
 .top_banner_section{
     width: 100%;
     height: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 12.5rem 12.5rem 12.5rem 12.5rem;
     row-gap: 40px;
     column-gap: 30px;
 }
@@ -133,11 +162,20 @@ input{
    display: block;
 }
 .banner-img{
-   
     width: 100%;
     height: 100%;
     overflow: hidden;
     object-fit: cover;
+    transform:scale(1.0);
+    transition: transform .5s;
+}
+.banner-img:hover{
+    overflow: hidden;
+    transform:scale(1.1);
+    transition: transform .8s;
+    
+    
+  
 }
 .banner-text{
 color: #f8f8f8;
@@ -183,78 +221,100 @@ z-index: 100;
 }
 
 .bottom_banner_section{
-    margin-top: 50px;
+    
     width: 100%;
     height: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
     row-gap: 40px;
     column-gap: 30px;
+    object-fit: cover;
 }
 .bottom_banner_img01{
+    position: relative;
     grid-row: 1/4;
     background-color: yellow;
 }
 .bottom_banner_img02{
+    position: relative;
     grid-row: 1/3;
     background-color: gray;
 }
 .bottom_banner_img03{
+    position: relative;
     grid-row: 1/2;
     grid-column: 3/4;
     background-color: purple;
 }
 .bottom_banner_img04{
+    position: relative;
     grid-row: 2/4;
     background-color: blue;
 }
 .bottom_banner_img05{
+    position: relative;
     grid-row: 3/4;
     grid-column: 2/3;
     background-color: pink;
 }
 .curation{
     width: 100%;
-    max-width: 100%;
-    padding-top: 600px;
-}
-.swiper_wrapper [class^="curation_item"]{
-    margin-top: 30px;
-    height: 700px;
-    width: 100%;
-    border: 1px solid black;
-    margin-right: 10px;
-
-}
-.promation img{
-    width: 350px;
-    height: 350px;
+    padding-top: 150px;
+    box-sizing: border-box;
+    overflow: hidden;
+    
 }
 .swiper_wrapper{
+    width: 100px;
     display: flex;
     
 }
+.swiper_wrapper [class^="curation_item"]{
+    overflow:visible;
+    margin-top: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    
+
+}
+.promation img{
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+}
+
 .news_item02{
-    padding-top: 30px;
+    padding-top: 70px;
 }
 .news_item02 li{
-   padding-right: 20px;
+    font-size: 13px;
+   padding-right: 25px;
 }
+.news_item01 li{
+    margin-right: 50px;
+}
+.news_item01 h6{
+    font-weight: 100;
+}
+
 .news_item01 p{
     font-size: 20px;
     font-weight: 700;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 .news_item03{
     float: right;
 }
 .news_item03 input{
     border-bottom: 1px solid gray;
-    width: 250px;
+    width: 300px;
+    height: 50px;
 }
 .news_item03 p{
     font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .news_wrap{
     display: inline-block;
@@ -269,6 +329,7 @@ z-index: 100;
   
 }
 .info_footer ul {
+    color: #868686;
     font-size: 10px;
     
 }
@@ -293,8 +354,48 @@ z-index: 100;
     line-height: 75px;
 }
 .released_section{
+margin-top: 50px;
+width: 100%;
+overflow: visible;
+height: 550px;
+margin-bottom: 180px;
 
+}
+.released_section h5{
+margin-top: 20px;
+color: #868686;
+}
+.released_wrap{
+    width: 100%;
+    display: flex;
+    
 }
 .released_item{
     
+    margin-top: 30px;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    width: 300px;
+    height: 380px;
+    background-color: #f7f7f7;
+    margin-right: 40px;
+    
+   
+}
+.released_item p {
+    align-items: center;
+    
+}
+.released_item img {
+   
+}
+.released_item label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 5px;
+    background-color: #e2e2e2ce;
+    border-radius: 5px;
+    padding: 3px;
 }
