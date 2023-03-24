@@ -70,50 +70,76 @@
           <section class="curation">
             <h1>이달의 큐레이션</h1>
             <h5>새로운 프로모션</h5>
-            <div class="swiper_wrapper">
-              <div class="curation_item01">
-                <div class="promation">
+            <div class="mySwiper">
+            <div class="swiper_wrapper swiper-wrapper">
+              <div class="curation_item01 swiper-slide">
+                <div class="promation ">
                   <img src="" alt="" class="banner-img">
+                  <h6>3.22~4.30</h6>
+                  <p>손으로 느끼는 감성, 향기와 공예의 만남</p><br>
+                  <h5>일상에서의 아트를 추구하는 알보우가  다양한 영역의 아티스트들과 만들어가는 라인을 새롭게 런칭했습니다.</h5>
                 </div>
                 <div class="contents"></div>
               </div>
-              <div class="curation_item02">
-                <div class="promation">
+              <div class="curation_item02 swiper-slide">
+                <div class="promation ">
                   <img src="" alt="" class="banner-img">
+                  <h6>큐레이션</h6>
+                  <p>도도새들의 춤이펼쳐지느 환상적인 세계로의 초대</p><br>
+                  <h5>김선우 작가의 개인전을 기념하며 다양한 굿즈와 원화를 온라인에서도 만나보세요.</h5>
                 </div>
                 <div class="contents"></div>
               </div>
-              <div class="curation_item03">
-                <div class="promation">
+              <div class="curation_item03 swiper-slide">
+                <div class="promation ">
                   <img src="" alt="" class="banner-img">
+                  <h6>선물제안</h6>
+                  <p>유야 하시즈메 X 프린트베이커리, 리미티드 에디션/아트굿즈 출시</p><br>
+                  <h5>서울에 떨어진 "EYE WATER", 오직 프린트베이커리에서만 만나볼 수 있는 유야 하시즈메의 에디션/아트굿즈를 만나보세요.</h5>
                 </div>
                 <div class="contents"></div>
               </div>
-              <div class="curation_item04">
-                <div class="promation"> 
+              <div class="curation_item04 swiper-slide">
+                <div class="promation "> 
                   <img src="" alt="" class="banner-img">
+                  <h6>큐레이션</h6>
+                  <p>손으로 느끼는 감성, 향기와 공예의 만남</p><br>
+                  <h5>일상에서의 아트를 추구하는 알보우가  다양한 영역의 아티스트들과 만들어가는 라인을 새롭게 런칭했습니다.</h5>
                 </div>
                 <div class="contents"></div>
               </div>
-              <div class="curation_item05">
-                <div class="promation"><img src="" alt="" class="banner-img"></div>
+              <div class="curation_item05 swiper-slide">
+                <div class="promation "><img src="" alt="" class="banner-img">
+                <h6>큐레이션</h6>
+                  <p>네 발 달린 친구들, 세계 강아지의 날</p><br>
+                  <h5>강아지의 날을 맞이해 강아지가 등장하는 작품을 소개해 드릴게요!</h5></div>
                 
                 <div class="contents"></div>
               </div>
-              <div class="curation_item06">
-                <div class="promation"><img src="" alt="" class="banner-img"></div>
+              <div class="curation_item06 swiper-slide">
+                <div class="promation "><img src="" alt="" class="banner-img">
+                <h6>큐레이션</h6>
+                  <p>색과 향이 풍부함 봄, 이달의 루키</p><br>
+                  <h5>에너지가 넘치는 봄의 기운이 느껴지는 이달의 루키 작품을 소개합니다.</h5></div>
                 <div class="contents"></div>
               </div>
-              <div class="curation_item07">
-                <div class="promation"><img src="" alt="" class="banner-img"></div>
+              <div class="curation_item07 swiper-slide">
+                <div class="promation "><img src="" alt="" class="banner-img">
+                <h6>큐레이션</h6>
+                  <p>신비롭게 울리는 심산의 정취</p><br>
+                  <h5>프린트베이커리 한남점에서 진행중인 전아현 개인전을 기념하며, 온라인에서도 작가의 작품을 만나보세요.</h5></div>
                 <div class="contents"></div>
               </div>
-              <div class="curation_item08">
-                <div class="promation"><img src="" alt="" class="banner-img"></div>
+              <div class="curation_item08 swiper-slide">
+                <div class="promation "><img src="" alt="" class="banner-img">
+                <h6>큐레이션</h6>
+                  <p>프리츠한센 x 프린트베이커리, 아트테리어 캠페인</p><br>
+                  <h5>프린트베이커리와 150년 역사의 인터내셔널 디자인 브랜드 프리츠한센이 만났습니다. 청신/윤형택 작가의 작품을 리빙으로 만나보세요.</h5></div>
                 <div class="contents"></div>
               </div>
             </div>
             <div class="swiper-pagination"></div>
+          </div>
           </section>
 
           <section class="released_section">
@@ -149,7 +175,22 @@
 
       <div data-include-path="footer.html"></div>
  
-    
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  
       <aside class="chat"><a href="#">CS</a></aside>
     </div>
   </body>

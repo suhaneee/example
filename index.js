@@ -23,6 +23,7 @@ const loadFile = async () => {
     });
   }
   setBannerImage();
+  
 //banner-text의 텍스트 변환
   function setBannerText() {
     const bannertexts = document.querySelectorAll(".banner-text");
