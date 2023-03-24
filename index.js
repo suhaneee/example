@@ -23,6 +23,16 @@ const loadFile = async () => {
     });
   }
   setBannerImage();
+
+  function setBannerLink() {
+    const bannerlinks = document.querySelectorAll(".banner-link");
+    bannerlinks.forEach((bannerlink, i) => {
+      const aLink = data[i].link;
+      bannerlink.setAttribute("href", aLink);
+      console.log(bannerlink);
+    });
+  }
+  setBannerLink();
   
 //banner-text의 텍스트 변환
   function setBannerText() {
