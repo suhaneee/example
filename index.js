@@ -48,22 +48,15 @@ const loadFile = async () => {
 
 loadFile();
 
-// header footer 분리해서 index.html에 붙히기
+//header footer 분리해서 index.html에 붙히기
 window.addEventListener("load", function () {
-  var allElements = document.getElementsByTagName("*");
-  Array.prototype.forEach.call(allElements, function (el) {
-    var includePath = el.dataset.includePath;
-    if (includePath) {
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          el.outerHTML = this.responseText;
-        }
-      };
-      xhttp.open("GET", includePath, true);
-      xhttp.send();
-    }
-  });
-});
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => document.querySelector("#header").innerHTML = data);
+
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => document.querySelector("#footer").innerHTML = data);
+}); // //패치로 
 
 
