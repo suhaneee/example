@@ -60,3 +60,14 @@ window.addEventListener("load", function () {
 }); // //패치로 
 
 
+const open = () => {
+  document.querySelector(".modal").classList.remove("hidden");
+}
+
+const close = () => {
+  document.querySelector(".modal").classList.add("hidden");
+}
+
+document.querySelector(".chat").addEventListener("click", open);
+document.querySelector(".closeBtn").addEventListener("click", close);
+document.querySelector(".bg").addEventListener("click", close);
